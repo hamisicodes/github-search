@@ -13,7 +13,7 @@ export class HttpRequestService {
     this.user = new User("","",0,0,0);
   }
 
-  userRequest(username){
+  userRequest(username="hamisicodes"){
     interface ApiResponse{
       login:string;
       avatar_url:string;

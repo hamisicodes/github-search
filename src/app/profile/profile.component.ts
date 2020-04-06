@@ -7,15 +7,24 @@ import { HttpRequestService } from '../services/http-request.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
+
+
 export class ProfileComponent implements OnInit {
+  
   user:User;
+
+  searchUserName(username:string){
+  
+    this._httpRequest.userRequest(username);
+    this.user = this._httpRequest.user;
+
+  }
 
   constructor(private _httpRequest:HttpRequestService) { }
 
   ngOnInit(): void {
-    this._httpRequest.userRequest("hamisicodes");
-    this.user = this._httpRequest.user;
-
+    this.searchUserName('hamisicodes')
+  
   }
 
 }
