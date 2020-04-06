@@ -17,13 +17,13 @@ export class ProfileComponent implements OnInit {
     interface APiResponse{
       login:string;
       avatar_url:string;
-      folowers:number;
+      followers:number;
       following:number;
       public_repos:number
     }
 
     this.http.get<APiResponse>("https://api.github.com/users/hamisicodes").subscribe(data=>{
-      this.user = new User(data.login,data.avatar_url,data.folowers,data.following,data.public_repos)
+      this.user = new User(data.login,data.avatar_url,data.followers,data.following,data.public_repos)
     })
    
 
