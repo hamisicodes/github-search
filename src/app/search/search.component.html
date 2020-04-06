@@ -1,5 +1,6 @@
-<form class="form-inline mr-auto">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" [(ngModel)] ="newUser.login">
-    {{newUser.login}}
+<form class="form-inline mr-auto"  #goalForm='ngForm'>
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name ="search" [(ngModel)]="newUser.login">
+   
     <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit" (click)="submitUser()">Search</button>
+    {{newUser.login}}
   </form>
