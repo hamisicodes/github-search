@@ -16,6 +16,7 @@ export class SearchComponent implements OnInit {
 
   submitUser(){
     this.searchUser.emit(this.newUser.login);
+    this.newUser = new User("","",0,0,0)
 
   }
   
