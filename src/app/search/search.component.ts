@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { User } from '../user';
 
 @Component({
@@ -8,8 +8,15 @@ import { User } from '../user';
 })
 export class SearchComponent implements OnInit {
 
+  newUser = new User("","",0,0,0)
+
+  @Output()
+  searchUser:EventEmitter<string> = new EventEmitter<string>()
+  
+
   submitUser(){
-    
+    this.searchUser.emit(this.newUser.login);
+
   }
   
 
