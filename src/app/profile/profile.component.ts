@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
-import { HttpClient } from '@angular/common/http';
 import { HttpRequestService } from '../services/http-request.service';
 
 @Component({
@@ -11,14 +10,11 @@ import { HttpRequestService } from '../services/http-request.service';
 export class ProfileComponent implements OnInit {
   user:User;
 
-  constructor(private http:HttpClient,private _httpRequest:HttpRequestService) { }
+  constructor(private _httpRequest:HttpRequestService) { }
 
   ngOnInit(): void {
-
-    
-
-   
-
+    this._httpRequest.userRequest();
+    this.user = this._httpRequest.user;
 
   }
 
