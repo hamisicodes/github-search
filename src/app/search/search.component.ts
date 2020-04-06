@@ -8,7 +8,9 @@ import { User } from '../user';
 })
 export class SearchComponent implements OnInit {
 
- 
+  submitUser(){
+    
+  }
   
 
   constructor() { }

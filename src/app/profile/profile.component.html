@@ -1,11 +1,35 @@
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://avatars2.githubusercontent.com/u/60657124?s=400&u=05cdc8207743723a69dd4364ba8de54c359f30ef&v=4" alt="Card image cap">
-    <div class="card-body font-weight-bold">
-      <p class="card-text">Name: {{user.login}}</p>
-      <p class="card-text">Followers: {{user.followers}}</p>
-      <p class="card-text">Following: {{user.following}}</p>
-      <p class="card-text">Pulic repo: {{user.public_repos}}</p>
-      
-      
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                    <h1 class="display-4 py-2 text-truncate"></h1>
+                    <div class="px-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top"
+                                src="https://avatars2.githubusercontent.com/u/60657124?s=400&u=05cdc8207743723a69dd4364ba8de54c359f30ef&v=4"
+                                alt="Card image cap">
+                            <div class="card-body font-weight-bold">
+                                <p class="card-text">Name: {{user.login}}</p>
+                                <p class="card-text">Followers: {{user.followers}}</p>
+                                <p class="card-text">Following: {{user.following}}</p>
+                                <p class="card-text">Public repos: {{user.public_repos}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                    <h1 class="display-4 py-2 text-truncate"></h1>
+                    <div class="px-2">
+                        <app-search></app-search>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</section>

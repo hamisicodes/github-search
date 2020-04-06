@@ -13,7 +13,7 @@ export class HttpRequestService {
     this.user = new User("","",0,0,0);
   }
 
-  userRequest(){
+  userRequest(username){
     interface ApiResponse{
       login:string;
       avatar_url:string;
@@ -22,7 +22,7 @@ export class HttpRequestService {
       public_repos:number
     }
     let newPromise  = new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>("https://api.github.com/users/hamisicodes").toPromise().then(response=>{
+      this.http.get<ApiResponse>("https://api.github.com/users/"+ username).toPromise().then(response=>{
         this.user.login = response.login
         this.user.avatar_url = response.avatar_url
         this.user.followers = response.followers

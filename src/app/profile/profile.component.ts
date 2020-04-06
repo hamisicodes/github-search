@@ -13,7 +13,7 @@ export class ProfileComponent implements OnInit {
   constructor(private _httpRequest:HttpRequestService) { }
 
   ngOnInit(): void {
-    this._httpRequest.userRequest();
+    this._httpRequest.userRequest("hamisicodes");
     this.user = this._httpRequest.user;
 
   }
