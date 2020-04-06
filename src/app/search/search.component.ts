@@ -8,7 +8,7 @@ import { User } from '../user';
 })
 export class SearchComponent implements OnInit {
 
-  user:User= new User("Hamisi","",3,5,15)
+ 
   
 
   constructor() { }
