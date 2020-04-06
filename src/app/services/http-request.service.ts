@@ -9,7 +9,9 @@ export class HttpRequestService {
   user:User;
 
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { 
+    this.user = new User("","",0,0,0);
+  }
 
   userRequest(){
     interface ApiResponse{
