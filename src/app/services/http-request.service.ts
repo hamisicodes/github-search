@@ -35,7 +35,7 @@ export class HttpRequestService {
         this.user.followers = 0
         this.user.following = 0
         this.user.public_repos = 0
-        
+
         reject(error)
 
       })

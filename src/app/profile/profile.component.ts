@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
 import { HttpClient } from '@angular/common/http';
+import { HttpRequestService } from '../services/http-request.service';
 
 @Component({
   selector: 'app-profile',
@@ -10,21 +11,12 @@ import { HttpClient } from '@angular/common/http';
 export class ProfileComponent implements OnInit {
   user:User;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private _httpRequest:HttpRequestService) { }
 
   ngOnInit(): void {
 
-    interface APiResponse{
-      login:string;
-      avatar_url:string;
-      followers:number;
-      following:number;
-      public_repos:number
-    }
+    
 
-    this.http.get<APiResponse>("https://api.github.com/users/hamisicodes").subscribe(data=>{
-      this.user = new User(data.login,data.avatar_url,data.followers,data.following,data.public_repos)
-    })
    
 
 
