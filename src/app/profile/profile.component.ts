@@ -21,6 +21,10 @@ export class ProfileComponent implements OnInit {
       following:number;
       public_repos:number
     }
+
+    this.http.get<APiResponse>("https://api.github.com/users/hamisicodes").subscribe(data=>{
+      this.user = new User(data.login,data.avatar_url,data.folowers,data.following,data.public_repos)
+    })
    
 
 
