@@ -1,7 +1,10 @@
 export class Repository {
-    name:string;
-    description:string;
-    default_branch:string;
-    language:string;
+    constructor(public name:string,public description:string, public default_branch:string, public language:string){
+
+    }
+    
+    
+    
+    
 
 }
