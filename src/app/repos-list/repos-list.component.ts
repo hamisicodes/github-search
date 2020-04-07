@@ -15,8 +15,8 @@ export class ReposListComponent implements OnInit {
   constructor(private _repoRequest:RepoRequestService){
 
   }
-  searchRepo(){
-    this._repoRequest.repoRequest().subscribe(data=>{
+  searchRepo(username){
+    this._repoRequest.repoRequest(this.username).subscribe(data=>{
       this.myRepos = data
     })
   }
