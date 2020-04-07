@@ -10,6 +10,7 @@ import { Repository } from '../repository';
 export class RepoRequestService {
 
   constructor(private http:HttpClient) { }
+
   repoRequest():Observable<Repository>{
     return this.http.get<Repository>("https://api.github.com/users/hamisicodes/repos");
   }

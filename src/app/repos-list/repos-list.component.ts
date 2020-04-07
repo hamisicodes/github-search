@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Repository } from '../repository';
+import { RepoRequestService } from '../services/repo-request.service';
 
 
 @Component({
@@ -9,13 +10,12 @@ import { Repository } from '../repository';
 })
 export class ReposListComponent implements OnInit {
   username:string = ""
-  myRepos:Repository[]=[
-    new Repository("hamso","my first repo","master","python"),
-    new Repository("salo","second repo","master","java"),
-    new Repository("sheba","my thi","master","html")
-  ]
+  myRepos:Repository[]
 
+  constructor(private _repoRequest:RepoRequestService){
 
+  }
+  
 
  
 
