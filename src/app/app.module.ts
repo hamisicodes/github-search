@@ -8,13 +8,15 @@ import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReposListComponent } from './repos-list/repos-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     SearchComponent,
-    ReposListComponent
+    ReposListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
