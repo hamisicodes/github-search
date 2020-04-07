@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { ProfileComponent } from '../profile/profile.component';
+import { ReposListComponent } from '../repos-list/repos-list.component';
 
 
+
+const routes: Routes = [
+  {path:'profile',component:ProfileComponent},
+  {path:'repos',component:ReposListComponent},
+  { path: '', redirectTo:"profile", pathMatch:"full"},
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
+
 export class RoutingModule { }
