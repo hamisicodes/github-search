@@ -7,7 +7,8 @@ import { ReposListComponent } from './repos-list/repos-list.component';
 
 const routes: Routes = [
   {path:'profile',component:ProfileComponent},
-  {path:'repos',component:ReposListComponent}
+  {path:'repos',component:ReposListComponent},
+  { path: '', redirectTo:"profile", pathMatch:"full"},
 ];
 
 @NgModule({

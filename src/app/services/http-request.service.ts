@@ -34,11 +34,7 @@ export class HttpRequestService {
         resolve()
 
       },error=>{
-        this.user.login = "none"
-        this.user.avatar_url = "none"
-        this.user.followers = 0
-        this.user.following = 0
-        this.user.public_repos = 0
+       
 
         reject(error)
 
