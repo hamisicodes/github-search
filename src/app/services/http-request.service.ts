@@ -8,6 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class HttpRequestService {
   user:User;
+  
 
 
   constructor(private http:HttpClient) { 
