@@ -10,7 +10,7 @@
                         <form class="form-inline mr-auto"  #goalForm='ngForm'>
                             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name ="search-repos" [(ngModel)]="username">
                            
-                            <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                            <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit" (click)="searchRepo()">Search</button>
                             
                           </form>
 
