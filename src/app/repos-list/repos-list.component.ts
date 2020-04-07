@@ -18,13 +18,14 @@ export class ReposListComponent implements OnInit {
   searchRepo(username){
     this._repoRequest.repoRequest(this.username).subscribe(data=>{
       this.myRepos = data
+      this.username=""
     })
   }
 
  
 
   ngOnInit(): void {
-    
+  
   }
 
 }
