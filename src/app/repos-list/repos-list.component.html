@@ -6,14 +6,7 @@
                 <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
                     <h1 class="display-4 py-2 text-truncate"></h1>
                     <div class="px-2">
-                        
-                        <form class="form-inline mr-auto"  #goalForm='ngForm'>
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name ="search-repos" [(ngModel)]="username">
-                           
-                            <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit" (click)="searchRepo(username)">Search</button>
-                            
-                          </form>
-
+                          <app-search (searchUser) = "searchRepo($event)"></app-search>
                     </div>
                     
                 </div>

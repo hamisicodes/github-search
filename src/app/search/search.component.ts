@@ -9,6 +9,7 @@ import { User } from '../user';
 export class SearchComponent implements OnInit {
 
   newUser = new User("","",0,0,0)
+  
 
   @Output()
   searchUser:EventEmitter<string> = new EventEmitter<string>()
