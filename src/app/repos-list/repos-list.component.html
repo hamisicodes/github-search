@@ -7,11 +7,14 @@
                     <h1 class="display-4 py-2 text-truncate"></h1>
                     <div class="px-2">
                           <app-search (searchUser) = "searchRepo($event)"></app-search>
+                          <br><br><br>
                     </div>
                     
                 </div>
+                
             </div>
             <div class="row">
+                
                 <div class="col-md-4" *ngFor = "let myRepo of myRepos">
                     <div class="card text-white bg-dark mb-3" style="max-width: 40rem; height: 20rem;">
                         <div class="card-header">{{myRepo.language}}</div>
