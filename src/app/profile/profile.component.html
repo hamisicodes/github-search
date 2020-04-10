@@ -16,7 +16,7 @@
                                 <p class="card-text">Followers:  {{user.followers}}</p>
                                 <p class="card-text">Following:  {{user.following}}</p>
                                 <p class="card-text">Public repos: {{user.public_repos}}</p>
-                                <button type="button" class="btn btn-info">SHOW REPOS</button>
+                                <button type="button" class="btn btn-info" (click) = 'toggleRepository()'>SHOW REPOS</button>
                             </div>
 
                         </div>
@@ -39,7 +39,7 @@
             <div class="row">
                 
                 <div class="col-md-4" *ngFor = "let myRepo of repo">`
-                    <div class="card text-white bg-dark mb-3" style="max-width: 40rem; height: 20rem;">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 40rem; height: 20rem;" *ngIf = 'showRepos'>
                         <div class="card-header">{{myRepo.language}}</div>
                         <div class="card-body">
                           <h5 class="card-title" appHighlight>{{myRepo.name}}</h5>
