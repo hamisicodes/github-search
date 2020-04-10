@@ -16,7 +16,9 @@
                                 <p class="card-text">Followers:  {{user.followers}}</p>
                                 <p class="card-text">Following:  {{user.following}}</p>
                                 <p class="card-text">Public repos: {{user.public_repos}}</p>
-                                <button type="button" class="btn btn-info" (click) = 'toggleRepository()'>SHOW REPOS</button>
+                                <button type="button" class="btn btn-info" (click) = 'toggleRepository()'>
+                                    {{showRepos? 'HIDE':'SHOW'}} REPOS
+                                </button>
                             </div>
 
                         </div>
