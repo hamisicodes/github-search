@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
   
   user:User;
   repo:Repository[]
+  showRepos:boolean = false ;
 
   searchUserName(username:string){
   
@@ -25,6 +26,10 @@ export class ProfileComponent implements OnInit {
       
     })
 
+  }
+  
+  toggleRepository(){
+    this.showRepos = !this.showRepos
   }
 
   constructor(private _httpRequest:HttpRequestService,private _repo:RepoRequestService) {
