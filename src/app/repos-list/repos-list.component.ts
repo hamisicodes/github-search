@@ -26,7 +26,7 @@ export class ReposListComponent implements OnInit {
  
 
   ngOnInit(): void {
-    this.searchRepo("hamisicodes")
+  
   
   }
 
