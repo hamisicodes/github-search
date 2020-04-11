@@ -4,7 +4,7 @@ A website where users may enter a GitHub username into a form, submit it, and se
 
 ## Author
 Hamisi Ngao
-<img src = "">
+<img src = "https://github.com/hamisicodes/github-search/blob/master/src/assets/github-search.jpeg">
 
 # Developer's contact
 ngaohamisi@gmail.com
