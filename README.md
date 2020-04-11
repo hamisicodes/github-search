@@ -1,6 +1,16 @@
 # GithubSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
+
+## Author
+Hamisi Ngao
+<img src = "">
+
+# Developer's contact
+ngaohamisi@gmail.com
+
+# Technologies used
+ANGULAR , HTML , CSS ,TYPESCRIPT
 
 ## Development server
 
